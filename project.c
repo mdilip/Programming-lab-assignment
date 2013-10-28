@@ -115,7 +115,7 @@ for(i=0;i<200;i++)
   GtkWidget *drawing_area;
   GtkWidget *vbox;
 
- // GtkWidget *green;
+  GtkWidget *green;
   
   
   gtk_init (&argc, &argv);
@@ -160,12 +160,13 @@ for(i=0;i<200;i++)
 			 | GDK_POINTER_MOTION_HINT_MASK);
 
   /* .. And a quit button */
-/*  green = gtk_button_new_with_label ("green");
+  green = gtk_button_new_with_label ("green");
   gtk_box_pack_start (GTK_BOX (vbox), green, FALSE, FALSE, 0);
-
+  green = gtk_button_new_with_label ("blue");
+  gtk_box_pack_start (GTK_BOX (vbox), green, FALSE, FALSE, 0);
   g_signal_connect_swapped (green, "clicked",
 			    G_CALLBACK (gtk_widget_destroy),
-			    window);*/
+			    window);
   //gtk_widget_show (green);
 
   gtk_widget_show_all (window);
