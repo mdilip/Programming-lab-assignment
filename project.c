@@ -188,14 +188,6 @@ GtkWidget *horizontal_box (gint A, gint B,
 {
   GtkWidget *Hbox;
   GtkWidget *button;
-  //gint *arr,*are;
-  //gint one=0,two=4;
-  //arr=&one;
-  //are=&two;
-  /*if(first)
-   {arr[0] = 0;arr[1]= 1;arr[2]= 2;arr[3]= 3;}
-  else
-   {arr[0] = 4;arr[1]= 5;arr[2]= 6;arr[3]= 7;}*/
   Hbox = gtk_hbox_new (A, B);
   button = gtk_button_new_with_label (first?"black":"eraser");
   gtk_box_pack_start (GTK_BOX (Hbox), button, C, D, E);
