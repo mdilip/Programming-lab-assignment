@@ -1,0 +1,7 @@
+sudo apt-get install libgtk3.0-bin
+sudo apt-get install libgtk3.0-common
+sudo apt-get install libgtk3.0-dev
+sudo apt-get install libgtk3.0-0:i386
+sudo apt-get install libgtk3.0-0:i386
+gcc -o simple filename.c `pkg-config --libs --cflags gtk+-2.0`
+http://zetcode.com/tutorials/gtktutorial/firstprograms/
